@@ -358,7 +358,7 @@ minions-feedback/
 
 **BEYOND STANDARD PATTERN**
 
-These utilities and classes are specific to `minions-feedback`:
+These utilities and classes are specific to `@minions-feedback/sdk`:
 
 **SurveyBuilder**
 - Fluent API for constructing surveys with validation
@@ -601,7 +601,7 @@ Include working examples for:
 
 **Agent Feedback Synthesis** (TypeScript)
 ```typescript
-import { FeedbackSynthesizer, ThemeExtractor, SentimentAnalyzer } from 'minions-feedback';
+import { FeedbackSynthesizer, ThemeExtractor, SentimentAnalyzer } from '@minions-feedback/sdk';
 
 const synthesizer = new FeedbackSynthesizer();
 const themeExtractor = new ThemeExtractor();
@@ -651,7 +651,7 @@ for theme in insights.top_themes[:3]:  # Top 3 themes
 
 **Real-time Sentiment Monitoring** (TypeScript)
 ```typescript
-import { SentimentAnalyzer } from 'minions-feedback';
+import { SentimentAnalyzer } from '@minions-feedback/sdk';
 
 const analyzer = new SentimentAnalyzer();
 
