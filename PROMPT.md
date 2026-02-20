@@ -143,6 +143,10 @@ Write a complete markdown specification document covering:
 **2. THE CORE LIBRARY** (`/packages/core`)
 
 A framework-agnostic TypeScript library built on `minions-sdk`. Must include:
+- **Unified Client Architecture**:
+  - A standalone `MinionsFeedback` client class that wraps all primitives and utilities in a unified facade.
+  - A `FeedbackPlugin` class that implements `MinionPlugin` for mounting onto the core `Minions` client (e.g. `minions.feedback`).
+  - Both modular (direct imports) and centralized (client instance) usage must be supported.
 
 - Full TypeScript type definitions for all feedback-specific types
 - `SurveyBuilder` class — fluent API for survey creation
@@ -174,6 +178,9 @@ A framework-agnostic TypeScript library built on `minions-sdk`. Must include:
 **3. THE PYTHON SDK** (`/packages/python`)
 
 A complete Python port of the core library with identical functionality:
+- **Unified Client Architecture**:
+  - `MinionsFeedback` standalone client class.
+  - `FeedbackPlugin` class for mounting onto the core `Minions` client.
 
 - Python type hints for all classes and methods
 - `SurveyBuilder`, `ResponseCollector`, `ThemeExtractor`, `SentimentAnalyzer`, `FeedbackSynthesizer` classes
